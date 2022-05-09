@@ -6,10 +6,9 @@
 html,body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 #main{
-   
     text-align:justify;
-    
 }
 
 .page-links{
@@ -20,14 +19,16 @@ html,body{
     width: 200px;
     height: auto;
 }
+
 li {
     list-style: none;
   }
-  
+
   a {
     color: #000;
     text-decoration: none;
   }
+
   header {
     position: fixed;
     top: 0;
@@ -39,11 +40,11 @@ li {
     background-color: #eee;
     width: 97%;
     border-bottom-right-radius: 25px;
-  }  
+  }
 
 #nav-bar{
     background-color: lightgray;
-    
+
 }
 
 @media (max-width: 650px) {
@@ -60,41 +61,22 @@ li {
     nav li {
       padding-bottom: 5px;
     }
-  }
-  
-  nav > ul {
+}
+
+nav > ul {
     width: 35vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-  }
-  
-  @media (max-width: 650px) {
+}
+
+@media (max-width: 650px) {
     nav > ul {
       flex-direction: column;
     }
-  }
+}
 
-  #section{
-      margin-inline-start: 25%;
-      margin-top: 50px;
-      margin-bottom: 50px;
-      width: 800px;
-  }
-  p{
-      margin-bottom: 50px;
-  }
-  #icon{
-      padding: 20px;
-      width: 200px;
-      height: auto;
-  }
-
-  .grid{
-      display: flex;
-  }
-
-  #legend{
+#legend{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,50 +84,122 @@ li {
     text-align: center;
     height: 200px;
     margin-top: 75px;
-  }
+}
 
-  #legend > h2 {
+#legend > h2 {
     margin-bottom: 20px;
     word-wrap: break-word;
-  }
-  #legend input[type='email'] {
+}
+
+#legend input[type='email'] {
     max-width: 275px;
     width: 100%;
     padding: 5px;
-  }
-  
-  #legend input[type='submit'] {
+}
+
+#legend input[type='submit'] {
     max-width: 150px;
     width: 100%;
     height: 30px;
     margin: 15px 0;
     border: 0;
     background-color: #f1c40f;
-  }
-  
-  #legend input[type='submit']:hover {
+}
+
+#legend input[type='submit']:hover {
     background-color: orange;
     transition: background-color 1s;
-  }
+} 
 
-  #inicio .ini{
+.icon{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 125px;
-    width: 80vw;
-    padding: 5px;
-  }
+}
 
-  #inicio .icon{
+#icon-image{
+      margin-left:50px;
+      padding: 20px;
+      width: 200px;
+      height: auto;     
+}
+
+.desc{
+  max-width: 55%;
+  margin-right: auto;
+}
+
+.grid{
+      display: flex;
+}
+.desc p{
+  font-size: larger;
+}
+#video{
+  margin-left: 30%;
+  margin-right: 30%;
+}
+#video iframe{
+  width:500px;
+  height:350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.precios{
+  margin-left: 25%;
+  margin-right: 25%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 125px;
-  width: 20vw;
-  color: darkorange;
+  padding-top: 50px;
+  padding-bottom: 50px;
+ 
 }
 
-#icon{
-    display: flex;
+.container, .container-features{  
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.curso{
+  border-style: solid;
+  border-width: 1px;
+  border-color: hsl(255, 4%, 20%);
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  width:400px;
+  height:fit-content;
+}
+.curso h2{
+  padding: 10px;
+}
+
+.curso .nivel{
+  background-color: lightgrey;
+  padding: 10px;
+}
+
+.curso ol{
+  padding: 5px;
+}
+
+.curso .btn {
+  padding-left: 5px;
+  padding-right: 5px;
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #f1c40f;
+}
+
+.curso .btn:hover {
+  background-color: orange;
+  transition: background-color 1s;
+} 
+
+#footer{
+  padding: 7px;
+  background-color: lightgrey;
+  text-align: right;
+}
+ 

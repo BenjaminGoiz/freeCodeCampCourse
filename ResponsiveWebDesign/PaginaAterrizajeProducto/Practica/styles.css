@@ -1,0 +1,23 @@
+body{
+  background-color: white;
+}
+.container{
+  border-color: black;
+  border-radius: 25px;
+  background-color: blue;
+  color: red;
+  flex-wrap: wrap;
+  display:flex;
+
+}
+
+.img{
+  background-color: red;
+}
+
+.info{
+  background-color: green;
+}
+p{
+  color: white;
+}

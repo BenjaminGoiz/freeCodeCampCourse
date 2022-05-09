@@ -1,52 +1,125 @@
 <!DOCTYPE html>
  <html>
   <head>
+    
+<script src="//unpkg.com/grapesjs"></script>
     <title>Landing Page</title>
     <LINK REL=StyleSheet HREF="style.css">
   </head>
 
   <body>
-    <main id="main">  
-    
-    </nav>   
+    <main id="main">    
      <header id="header">
        <div><img id="header-img" src="https://www.clipartmax.com/png/full/128-1287555_acoustic-guitar-png-transparent-images-mitchell-md100-dreadnought-acoustic-guitar-natural.png" alt="guitar co.  logo"></div>
         <nav class="nav-left" id="nav-bar">
             <ul id="links">
-                <li><a href="#incio">Inicio</a></li>
-                <li class="l2"><a href="#tutoriales">Tutoriales</a></li>
-                <li class="l3"><a href="#cursos">Cursos</a></li>
+                <li><a class="nav-link"  href="#inicio">Inicio</a></li>
+                <li><a class="nav-link" href="#tutoriales">Video</a></li>
+                <li><a class="nav-link" href="#cursos">Precios</a></li>
                 </ul>
           </nav>
         </header>
-        
+
+        <div class="container">
+
           <div id="legend">
-           <h2 id="title">Mi Producto</h2>
-            <div id="email-container">
-              <input type="email" placeholder="Introduce tu mail aqui">
-              <input id="btn-comienza"type="submit" value="Comienza ahora">
+           <h2 id="title">Escuela de Guitarra del Pacifico</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+              <input name="email" id="email" type="email" placeholder="Introduce tu mail aqui" required>
+              <input id="submit"type="submit" value="Comienza ahora" >
             </div>
           </div>
+        </div>
+        
 
+        <div class="container-features">
         <section id="inicio">
           <div class="grid">
-            <div id="ini">
-            <img id="icon"src="https://pic.onlinewebfonts.com/svg/img_453823.png">            
-            <h2>Inicio</h2>
-            <p id="inicio-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <div id="icon">
+            <img id="icon-image"src="https://st.depositphotos.com/1822645/1553/i/950/depositphotos_15531945-stock-photo-handshake.jpg">
+            </div>  
+                <div class="desc">           
+                <h2>Inicio</h2>
+                 <p>Nuestra Escuela de guitarra esta enfocada en proporcionarte los conocimientos y tecnicas que necesitas para que comiences a tocar tu guitarra desde la primera leccion
+                </p>
+                </div>             
           </div>
-          </div>
+        </section>
+          <section id="tutoriales">
             <div class="grid">
-              <h2 id="tutoriales">Tutoriales</h2>
-              <p id="tutoriales-content">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+              <div id="icon">
+                <img id="icon-image"src="https://www.publicdomainpictures.net/pictures/50000/velka/joueur-de-guitare.jpg">
+                </div>
+              <div class="desc">    
+              <h2>Tutoriales</h2>
+              <p>Contamos con una gran cantidad de videos tutoriales que te ayudaran a continuar tus practicas desde la comodidad de tu casa y en el momento que tu decidas</p>
             </div>
-            <div class="grid"> 
-              <h2 id="cursos">cursos</h2>  
-            <p id="cursos-content">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
             </div>
+          </section>
+          <section id="cursos">
+            <div class="grid">
+              <div id="icon">
+                <img id="icon-image"src="https://media.istockphoto.com/photos/learning-to-play-the-guitar-music-education-and-extracurricular-picture-id596345112">
+                </div>
+               <div class="desc">
+              <h2>Cursos</h2>
+            <p>Puedes inscribirte a nuestros cursos donde podras tomas clases tanto de manera prescencial como de manera remota, tenemos un grupo de profesores que estarán siempre dispuestos a motivarte a seguir aprendiendo</p>
+            </div>
+          </div>
+          </section>   
         </div>
+      
 
-     <footer id="footer">Para mas informacion </a></footer>
+      <section class="Presentacion">
+        <iframe id="video" src="https://www.youtube.com/embed/S_QIaGgLJ-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+      <section class="precios">
+        <div class="curso" id="basico">
+          <div class="nivel">
+           BASICO
+          </div>
+          <h2>$600</h2>
+        <ol>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ol>
+        <button class="btn">Select</button>
+        </div>  
+        <div class="curso" id="avanzado">
+          <div class="nivel">
+            AVANZADO
+          </div>
+          <h2>$900</h2>
+        <ol>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ol>
+        <button class="btn">Select</button>
+        </div>  
+        <div class="curso" id="experto">
+          <div class="nivel">
+            EXPERTO
+          </div>
+          <h2>$1200</h2>
+        <ol>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ol>
+        <button class="btn">Select</button>
+        </div>  
+      </section>
+      
+
+     <footer id="footer">
+       <nav class="pie">  <a href="#">Privacy</a> <a href="#">Terms</a> <a href="#">Contact</a></nav>
+       Copyright 2022, Escuela de Guitarra del Pacifico
+      </footer>
     </main>
   </body>
 </html>

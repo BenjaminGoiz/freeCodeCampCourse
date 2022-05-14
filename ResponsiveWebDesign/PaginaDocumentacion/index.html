@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+    <title>Documentacion</title>
+    <LINK REL=StyleSheet HREF="style.css">
+  </head>
+  <nav id="navbar">
+    <header>Documentacion Tecnica</header>
+    <ul>
+        <li><a class="nav-link" href="#css">CSS</a></li>
+        <li><a class="nav-link" href="#selectores">Selectores</a></li>
+        <li><a class="nav-link" href="#selector_universal">Selector Universal</a></li>
+        <li><a class="nav-link" href="#selector_de_tipo">Selector de tipo</a></li>
+        <li><a class="nav-link" href="#selector_descendente">Selector Descendente</a></li>
+        <li><a class="nav-link" href="#selector_de_clase">Selector de Clase</a></li>
+        <li><a class="nav-link" href="#selector_de_id">Selector de ID</a></li>
+      </ul>
+</nav>
+  <body>
+    <main id="main-doc">  
+       
+        <section class="main-section" id="css">
+            <header>CSS</header>
+            <p>CSS es un lenguaje de hojas de estilos creado para controlar el aspecto o presentación de los
+              documentos electrónicos definidos con HTML y XHTML. CSS es la mejor forma de separar los
+              contenidos y su presentación y es imprescindible para crear páginas web complejas.</p>
+            <p></p>
+           
+            
+        </section>
+    
+          
+        <section class="main-section" id="Selectores">
+            <header>Selectores</header>
+            <p>Para crear diseños web profesionales, es imprescindible conocer y dominar los selectores de
+              CSS. Como se vio en el capítulo anterior, una regla de CSS está formada por una parte llamada
+              "selector" y otra parte llamada "declaración".
+              </p>
+            <p>La declaración indica "qué hay que hacer" y el selector indica "a quién hay que hacérselo". Por lo
+              tanto, los selectores son imprescindibles para aplicar de forma correcta los estilos CSS en una
+              página.
+              </p>
+              <p>
+                A un mismo elemento HTML se le pueden asignar infinitas reglas CSS y cada regla CSS puede
+                aplicarse a un número infinito de elementos. En otras palabras, una misma regla puede aplicarse
+                sobre varios selectores y un mismo selector se puede utilizar en varias reglas.
+                El estándar de CSS 2.1 incluye una docena de tipos diferentes de selectores, que permiten
+                seleccionar de forma muy precisa elementos individuales o conjuntos de elementos dentro de
+                una página web.No obstante, la mayoría de páginas de los sitios web se pueden diseñar utilizando solamente los
+                cinco selectores básicos.
+              </p>
+            <ul>
+              <li>Selector universal</li>
+              <li>Selector de tipo</li>
+              <li>Selector descendente</li>
+              <li>Selector de Clase</li>
+              <li>Selectores de ID</li>
+          </ul>
+        </section>
+      
+        <section class="main-section" id="selector_universal">
+            <header>Selector Universal</header>
+            <p>Se utiliza para seleccionar todos los elementos de la página. El siguiente ejemplo elimina el
+              margen y el relleno de todos los elementos HTML (por ahora no es importante fijarse en la parte
+              de la declaración de la regla CSS):
+              </p>
+              <code>* {
+                margin: 0;
+                padding: 0;
+                }
+                </code>
+            <p>El selector universal se indica mediante un asterisco (*). A pesar de su sencillez, no se utiliza
+              habitualmente, ya que es difícil que un mismo estilo se pueda aplicar a todos los elementos de
+              una página</p>
+              
+        </section>
+      
+        <section class="main-section" id="selector_de_tipo">
+            <header>Selector de Tipo</header>
+            <p>Selecciona todos los elementos de la página cuya etiqueta HTML coincide con el valor del
+              selector. El siguiente ejemplo selecciona todos los párrafos de la página:</p>
+            <code>p {
+                ...
+                }                
+            </code>  
+            <p>Para utilizar este selector, solamente es necesario indicar el nombre de una etiqueta HTML (sin
+              los caracteres < y >) correspondiente a los elementos que se quieren seleccionar.
+              El siguiente ejemplo aplica diferentes estilos a los titulares y a los párrafos de una página HTML:</p>
+            <code>h1 {
+              color: red;
+              }
+              h2 {
+              color: blue;
+              }
+              p {
+              color: black;
+              }
+              </code>
+              <p>Si se quiere aplicar los mismos estilos a dos etiquetas diferentes, se pueden encadenar los
+                selectores. En el siguiente ejemplo, los títulos de sección h1, h2 y h3 comparten los mismos
+                estilos:</p>
+            <code>h1 {
+                color: #8A8E27;
+                font-weight: normal;
+                font-family: Arial, Helvetica, sans-serif;
+                }
+                h2 {
+                color: #8A8E27;
+                font-weight: normal;
+                font-family: Arial, Helvetica, sans-serif;
+                }
+                h3 {
+                color: #8A8E27;
+                font-weight: normal;
+                font-family: Arial, Helvetica, sans-serif;
+                }
+            </code>
+        </section>
+
+        <section class="main-section" id="selector_descendente">
+          <header>Selector Descendente</header>
+          <p>Selecciona los elementos que se encuentran dentro de otros elementos. Un elemento es
+            descendiente de otro cuando se encuentra entre las etiquetas de apertura y de cierre del otro
+            elemento.
+            El selector del siguiente ejemplo selecciona todos los elementos &lt;span&gt; de la página que se
+            encuentren dentro de un elemento parrafo:
+            </p>
+            <code>p span { color: red; }</code>
+          <p>Si el código HTML de la página es el siguiente:</p>          
+          <code>&lt;p&gt;
+            ...
+            &lt;span&gt;texto1&lt;/span&gt;
+            ...
+            &lt;a href=""&gt;...&lt;span&gt;texto2&lt;/span&gt;&lt;/a&gt;
+            ...
+            &lt;/p&gt;
+            </code>
+          <p>El selector p span selecciona tanto texto1 como texto2. El motivo es que en el selector
+            descendente, un elemento no tiene que ser "hijo directo" de otro. La única condición es que un
+            elemento debe estar dentro de otro elemento, sin importar lo profundo que se encuentre.</p>
+      </section>
+      
+        <section class="main-section" id="selector_de_clase">
+            <header>Selector de Clase</header>
+            <p>Si se considera el siguiente código HTML de ejemplo:</p>
+            <code>&lt;body&gt;
+              &lt;p&gt;Lorem ipsum dolor sit amet...&lt;/p&gt;
+              &lt;p&gt;Nunc sed lacus et est adipiscing accumsan...&lt;/p&gt;
+              &lt;p&gt;Class aptent taciti sociosqu ad litora...&lt;/&gt;
+              &lt;/body&gt;
+            </code>
+            <p>¿Cómo se pueden aplicar estilos CSS sólo al primer párrafo? El selector universal (*) no se puede
+              utilizar porque selecciona todos los elementos de la página. El selector de tipo o etiqueta (p)
+              tampoco se puede utilizar porque seleccionaría todos los párrafos. Por último, el selector
+              descendente (body p) tampoco se puede utilizar porque todos los párrafos se encuentran en el
+              mismo sitio.</p>
+              <p>Una de las soluciones más sencillas para aplicar estilos a un solo elemento de la página consiste
+                en utilizar el atributo class de HTML sobre ese elemento para indicar directamente la regla CSS
+                que se le debe aplicar:
+                </p>           
+            <code> &lt;p class="destacado"&gt;Lorem ipsum dolor sit amet...&lt;/p&gt;
+              &lt;p&gt;Nunc sed lacus et est adipiscing accumsan...&lt;/p&gt;
+              &lt;p&gt;Class aptent taciti sociosqu ad litora...&lt;/&gt;
+              &lt;/body&gt;</code>
+              <p>A continuación, se crea en el archivo CSS una nueva regla llamada destacado con todos los
+                estilos que se van a aplicar al elemento. Para que el navegador no confunda este selector con los
+                otros tipos de selectores, se prefija el valor del atributo class con un punto (.) tal y como
+                muestra el siguiente ejemplo:</p>
+            <code>.destacado { color: red; }</code>
+            <p>El selector .destacado se interpreta como "cualquier elemento de la página cuyo atributo class
+              sea igual a destacado", por lo que solamente el primer párrafo cumple esa condición.</p>
+        </section>
+
+        <section class="main-section" id="selector_de_id">
+          <header>Selector de ID</header>
+          <p>En ocasiones, es necesario aplicar estilos CSS a un único elemento de la página. Aunque puede
+            utilizarse un selector de clase para aplicar estilos a un único elemento, existe otro selector más
+            eficiente en este caso.</p>
+          <p>El selector de ID permite seleccionar un elemento de la página a través del valor de su atributo
+            id. Este tipo de selectores sólo seleccionan un elemento de la página porque el valor del atributo
+            id no se puede repetir en dos elementos diferentes de una misma página.</p>
+            <p>La sintaxis de los selectores de ID es muy parecida a la de los selectores de clase, salvo que se
+              utiliza el símbolo de la almohadilla (#) en vez del punto (.) como prefijo del nombre de la regla
+              CSS:
+              </p>
+          <code>#destacado { color: red; }
+            &lt;p&gt;Primer párrafo&lt;/p&gt;
+            &lt;p id="destacado"&gt;Segundo párrafo&lt;/p&gt;
+            &lt;p&gt;Tercer párrafo&lt;/p&gt;
+          </code>
+          <p>En el ejemplo anterior, el selector #destacado solamente selecciona el segundo párrafo (cuyo
+            atributo id es igual a destacado).</p>
+          
+      </section>
+    
+     <footer id="footer">Creditos al Autor Javier Eguíluz Pérez</footer>
+    </main>
+  </body>
+</html>

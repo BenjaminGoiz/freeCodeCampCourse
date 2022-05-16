@@ -42,25 +42,34 @@ li {
     border-bottom-right-radius: 25px;
   }
 
-#nav-bar{
-    background-color: lightgray;
+#nav-bar li{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    background-color: rgb(205, 205, 205);
+    border-radius: 5px;
 
 }
 
-@media (max-width: 650px) {
+@media (min-width: 800px) {
     nav {
-      background-color: lightgrey;
+      background-color: #eee;
       margin-top: 10px;
-      width: 100%;
+      width: fit-content;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
       padding: 0 50px;
     }
+   
+   
     nav li {
       padding-bottom: 5px;
+      
     }
+    
 }
 
 nav > ul {
@@ -70,10 +79,24 @@ nav > ul {
     justify-content: space-around;
 }
 
-@media (max-width: 650px) {
-    nav > ul {
-      flex-direction: column;
+@media (max-width: 800px) {
+    nav > ul {      
+      flex-direction: column;     
     }
+    .precios{
+      display: flex;
+      flex-direction: column;      
+    }
+    .curso{
+      margin-bottom: 10px;
+    }
+    #nav-bar{
+      text-align: center;     
+    }
+    #nav-bar li{
+      border-radius: 0px;
+    }
+   
 }
 
 #legend{
@@ -162,11 +185,11 @@ nav > ul {
   border-style: solid;
   border-width: 1px;
   border-color: hsl(255, 4%, 20%);
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
   text-align: center;
   width:400px;
-  height:fit-content;
+  height:300px;
 }
 .curso h2{
   padding: 10px;

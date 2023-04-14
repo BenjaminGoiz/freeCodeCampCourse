@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#navbar{
+    position: fixed;
+    background: linear-gradient(45deg,#400139, #951dff);
+    width: 100%;
+    height: 75px;
+    align-content: space-around;
+    font-size: larger;
+    
+}
+#navbar a{
+    text-decoration: none;
+    color: #fff;
+    padding: 25px;
+    
+}
+
+
+#navbar ul{
+    display: flex;   
+    justify-content: right;
+    
+}
+
+#navbar li{    
+    margin-left: 10px;
+    list-style: none;
+    margin-top: 25px; 
+          
+}
+main{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(178, 143, 255, 0.5),rgba(221, 22, 121, 0.5)),url(images/travel.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+h1,p{
+    color: rgb(255, 255, 255);
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    color: rgba(250, 3, 97,1);
+    font-size: 45px;
+}
+#Destinos{
+    width:auto;
+    height: 10vh;
+    display: flex;
+    text-align: start;
+    align-items:flex-start;
+    justify-content: center;
+    background-image: url(images/skyline.jpg);
+    background-size:cover;
+    background-color:rgba(31, 0, 23, 0.5);
+}
+
+#seleccion-destino{
+    background-color: blue;
+    height: min-content;
+}
+#destino-elegir{   
+    text-align: center;
+    color: rgb(0, 255, 13);
+}
+
+#seleccion-destino{    
+    display: grid;    
+    min-height: 100px;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    background: linear-gradient(45deg,rgb(23, 1, 55),rgb(212, 57, 243));   
+}
+.destiny-tile{
+   
+    background: linear-gradient(45deg,rgb(23, 1, 55),rgb(212, 57, 243));
+}
+
+.destiny-image{
+    
+    height: 400px;
+    width: fit-content;
+    
+}
+
+.destiny-tile p{
+    height: min-content;
+    text-align: center;    
+    font-size: 50px;
+    color:rgb(0, 255, 47);
+}
+
